@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.2.3.min.js" integrity="sha384-T2yuo9Oe71Cz/I4X9Ac5+gpEa5a8PpJCDlqKYO0CfAuEszu1JrXLl8YugMqYe3sM" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="73a72568-ec76-4c5b-8994-d76c5d094524" data-root-id="1380"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="1444">
+          {"e81d7181-118c-4d82-8062-53c7b4a6b735":{"roots":{"references":[{"attributes":{"text":"Chicago Property Sales"},"id":"1381","type":"Title"},{"attributes":{},"id":"1397","type":"PanTool"},{"attributes":{"dimension":"lon"},"id":"1388","type":"MercatorTicker"},{"attributes":{},"id":"1408","type":"LinearScale"},{"attributes":{},"id":"1382","type":"Range1d"},{"attributes":{},"id":"1407","type":"LinearScale"},{"attributes":{"api_key":"QUl6YVN5QTVHMC1jckRTMVpiOUU1T0huenFpNjc5WTBnWjRZVmtJ","below":[{"id":"1389"}],"left":[{"id":"1394"}],"map_options":{"id":"1379"},"title":{"id":"1381"},"toolbar":{"id":"1401"},"x_range":{"id":"1382"},"x_scale":{"id":"1407"},"y_range":{"id":"1383"},"y_scale":{"id":"1408"}},"id":"1380","subtype":"GMap","type":"GMapPlot"},{"attributes":{},"id":"1400","type":"HelpTool"},{"attributes":{},"id":"1398","type":"WheelZoomTool"},{"attributes":{},"id":"1399","type":"ResetTool"},{"attributes":{"dimension":"lat"},"id":"1393","type":"MercatorTicker"},{"attributes":{"lat":41.8310893,"lng":-87.7755728,"zoom":10},"id":"1379","type":"GMapOptions"},{"attributes":{"dimension":"lat"},"id":"1392","type":"MercatorTickFormatter"},{"attributes":{},"id":"1383","type":"Range1d"},{"attributes":{"dimension":"lon"},"id":"1387","type":"MercatorTickFormatter"},{"attributes":{"formatter":{"id":"1392"},"ticker":{"id":"1393"}},"id":"1394","type":"LinearAxis"},{"attributes":{"formatter":{"id":"1387"},"ticker":{"id":"1388"}},"id":"1389","type":"LinearAxis"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"1397"},{"id":"1398"},{"id":"1399"},{"id":"1400"}]},"id":"1401","type":"Toolbar"}],"root_ids":["1380"]},"title":"Bokeh Application","version":"2.2.3"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('1444').textContent;
+                  var render_items = [{"docid":"e81d7181-118c-4d82-8062-53c7b4a6b735","root_ids":["1380"],"roots":{"1380":"73a72568-ec76-4c5b-8994-d76c5d094524"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
