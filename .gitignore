@@ -1,0 +1,4 @@
+.vscode
+.gitsecret/keys/random_seed
+!*.secret
+secret_test.txt
