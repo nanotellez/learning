@@ -2,3 +2,4 @@
 .gitsecret/keys/random_seed
 !*.secret
 secret_test.txt
+keep_this_secret.txt
